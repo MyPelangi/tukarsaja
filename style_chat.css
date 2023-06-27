@@ -1,0 +1,508 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: white;
+}
+.chat {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card {
+  height: 100vh;
+  margin: 20px 0;
+  border-radius: 12px !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px #bfbfbf;
+}
+
+.contacts_body {
+  padding: 0.75rem 0 !important;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
+.msg_card_body {
+  overflow-y: auto;
+}
+
+.card-header {
+  background-color: #a2a2a236;
+  border-radius: 12px 12px 0 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card-footer {
+  background-color: #a2a2a236;
+  border-radius: 0 0 12px 12px !important;
+  border-top: 0 !important;
+}
+
+.container {
+  align-content: center;
+}
+
+.search {
+  border-radius: 8px 0 0 8px !important;
+  background-color: white !important;
+  border: 0 !important;
+  color: rgb(32, 32, 32) !important;
+}
+
+.search:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.type_msg {
+  background-color: white !important;
+  border: 0 !important;
+  color: rgb(32, 32, 32) !important;
+  height: 60px !important;
+  overflow-y: auto;
+}
+
+.type_msg:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.attach_btn {
+  border-radius: 15px 0 0 15px !important;
+  background-color: white !important;
+  border: 0 !important;
+  color: #f7bf74 !important;
+  cursor: pointer;
+}
+
+.send_btn {
+  border-radius: 0 15px 15px 0 !important;
+  background-color: white !important;
+  border: 0 !important;
+  color: #f7bf74 !important;
+  cursor: pointer;
+}
+
+.search_btn {
+  border-radius: 0 8px 8px 0 !important;
+  background-color: white !important;
+  border: 0 !important;
+  color: #f7bf74 !important;
+  cursor: pointer;
+}
+
+.contacts {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li {
+  width: 100% !important;
+  padding: 5px 10px;
+  margin-bottom: 15px !important;
+}
+
+.contacts :hover {
+  background-color: #f7be74d2;
+}
+
+.active {
+  background-color: #f7be74d2;
+}
+
+.user_img {
+  height: 60px;
+  width: 60px;
+  border: 1.5px solid #f5f6fa;
+}
+
+.user_img_msg {
+  height: 40px;
+  width: 40px;
+  border: 1.5px solid #f5f6fa;
+}
+
+.img_cont img {
+  /* position: relative; */
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+}
+
+.btn .btn-1,
+.btn .btn-2 {
+  margin: auto 8px;
+  width: 120px;
+  height: 32px;
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.btn .btn-1 {
+  background-color: #f88a00;
+  color: aliceblue;
+}
+
+.btn .btn-2 {
+  background-color: #efefef;
+}
+
+.btn .btn-1:hover {
+  background-color: #e0800a;
+}
+
+.btn .btn-2:hover {
+  background-color: #a7a7a7;
+  color: aliceblue;
+}
+
+.img_cont_msg {
+  height: 40px;
+  width: 40px;
+}
+
+.online_icon {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #4cd137;
+  border-radius: 50%;
+  margin-left: -12px;
+  margin-top: 40px;
+  border: 1.5px solid white;
+}
+
+.offline {
+  background-color: #c23616 !important;
+}
+
+.user_info {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+
+.user_info span {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.755);
+}
+
+.user_info p {
+  font-size: 10px;
+  color: rgba(2, 2, 2, 0.6);
+}
+
+.user_info .judul-product p {
+  font-size: 15px;
+  color: rgba(2, 2, 2, 0.6);
+}
+
+.user_info .back{
+  font-size: 15px;
+  color: rgba(2, 2, 2, 0.6);
+  text-decoration: none;
+}
+
+.product_show_info {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+
+.product_show_info span {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.755);
+}
+
+.product_show_info p {
+  font-size: 13px;
+  color: rgba(2, 2, 2, 0.6);
+}
+
+.video_cam {
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.video_cam span {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.msg_cotainer {
+  margin-left: 10px;
+  border-radius: 4px;
+  background-color: #98989875;
+  padding: 10px;
+  position: relative;
+}
+
+.msg_cotainer_send {
+  margin: 10px 10px 0 0;
+  border-radius: 4px;
+  background-color: #f7bf74;
+  padding: 10px;
+  position: relative;
+}
+
+.produk {
+  margin-bottom: 30px;
+}
+
+.d-flex .msg_cotainer_send img {
+  /* margin: 70px; */
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.msg_time {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+}
+
+.msg_time_send {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+}
+
+.msg_head {
+  position: relative;
+}
+
+#action_menu_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.action_menu {
+  z-index: 1;
+  position: absolute;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 15px;
+  top: 30px;
+  right: 15px;
+  display: none;
+}
+
+.action_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.action_menu ul li {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+  padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.typing-area {
+  width: 100%;
+  background: #efefef;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.typing-area .input-field {
+  width: 100%;
+  position: relative;
+}
+
+.typing-area .input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  padding-right: 70px;
+  transition: 0.3s all ease;
+}
+
+.typing-area .input-field input:focus {
+  border-color: #f7bf74;
+}
+
+.typing-area .input-field button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid #72a7c5;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #72a7c5;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s all ease;
+}
+
+.typing-area .input-field button:hover {
+  background: #72a7c5;
+  color: white;
+}
+
+.typing-area .input-field input:valid ~ button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.typing-area .icon-gambar button {
+  top: 50%;
+  right: 10px;
+  background: transparent;
+  border: 1px solid #72a7c5;
+  padding: 7px 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  color: #72a7c5;
+}
+.typing-area .icon-gambar button:hover {
+  background: #72a7c5;
+  color: white;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #cacaca36;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 576px) {
+  .contacts_card {
+    margin-bottom: 15px !important;
+  }
+}
+
+.sproduct .col-12 .box-1{
+	width: 100%;
+	height: 337px;
+    border-radius: 5px;
+	background: #ffffff;
+    padding: 25px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.sproduct .col-12 .box-1-1{
+    padding: 10px;
+	width: 150px;
+	height: 120px;
+	background: #ffffff;
+    margin-top: 30px;
+	margin: auto;
+    border-radius: 5px;
+	border: solid 1px #F88A00;
+}
+
+.sproduct h5{
+    /* padding-top: 15px; */
+    padding-bottom: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.sproduct .simpan {
+	/* display: flex; */
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #F88A00;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.sproduct .simpan:hover {
+	background-color: #e0800a;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+  
+}
+html,body{
+  padding:5px 5px;
+ 
+  height: 100%;
+  place-items: left;
+
+  
+
+}
+p.foto{
+  padding-left: 20px;
+  
+}
+.container-form{
+  border-radius:10px;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.wrapcontainer{
+ display: grid;
+ 
+    grid-template-columns: repeat(2, 1fr);
+  
+}
+
+.unggah{
+  background-color: #f88a00;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  width: 700px;
+  height: 40px;
+}
+.unggah:hover {
+  background-color: #e0800a;
+}
+.container-image{
+  border-radius:10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  padding: 50px 0px;
+}
+
+.container-image .wrapper{
+  border:1px solid black;
+  position: relative;
+  margin: auto;
+  height: 400px;
+  width: 80%;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 50px;
+  color: #666;
+  text-align: center;
+}
+.wrapper .text{
+  font-size: 15px;
+  font-weight: 100;
+  color: #5B5B7B;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #f88a00;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 10px;
+  color: #fff;
+  display: none;
+  background: #f88a00;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container-image input[type="file"] #custom-btn{
+  
+  margin:auto ;
+  margin-top: 1cm;
+  display: block;
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+
+  font-weight: 110;
+  letter-spacing: 1px;
+  
+  cursor: pointer;
+  background-color: #f88a00;
+
+}
+.container-image #custom-btn:hover{
+  background-color: #e0800a;
+}
+input[type="text"]:focus, select:focus, textarea:focus{
+  outline: none !important;
+  border: 3px solid #fcab3f;
+  box-shadow: 0 0 10px#f88a00;
+}
+.form-control:focus,.form-select{
+  border : 3px solid #fcab3f !important;
+  box-shadow: 0 0 10px#f88a00 !important;
+}
+option:checked, option:hover, option:active{
+  color: white;
+  background: #f88a00;
+}
+input[type="checkbox"]:checked{
+  background-color: #f88a00 !important;
+}
+input[type="checkbox"]:checked:after{
+  background-color: #f88a00 !important;
+}
